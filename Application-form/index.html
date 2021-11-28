@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leave Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Application form</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="session name" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Leave type</span>
+              <input
+                type="text"
+                placeholder="session type of leave"
+                required
+                disabled
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Current leave balance</span>
+              <input
+                type="text"
+                placeholder="leave balance"
+                required
+                disabled
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Leave start on</span>
+              <input type="datetime-local" placeholder="" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Leave end on</span>
+              <input type="datetime-local" placeholder="" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" placeholder="Enter your number" required />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Reason for Leave</span>
+              <textarea
+                id="text-reason"
+                type="text"
+                placeholder="Type leave reason..."
+                rows="5"
+                cols="50"
+                required
+              ></textarea>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Supporting Document(optional)</span>
+              <input type="file" placeholder="Upload.." required />
+            </div>
+          </div>
+          <div class="rbutton-details">
+            <input type="radio" name="rbutton" id="dot-1" />
+            <input type="radio" name="rbutton" id="dot-2" />
+            <input type="radio" name="rbutton" id="dot-3" />
+            <span class="rbutton-title">Allow Notification</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="rbutton">YES</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="rbutton">NO</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="rbutton">Calls Only</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
